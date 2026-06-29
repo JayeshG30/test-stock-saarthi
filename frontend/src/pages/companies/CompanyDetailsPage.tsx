@@ -1,5 +1,5 @@
 
-const CompanyDetailsPage = () => {
+export const CompanyDetailsPage = () => {
   return (
     <div>
       
@@ -7,4 +7,3 @@ const CompanyDetailsPage = () => {
   )
 }
 
-export default CompanyDetailsPage

@@ -24,4 +24,3 @@ export const SidebarGroup = ({
   )
 }
 
-export default SidebarGroup

@@ -1,6 +1,6 @@
 
 
-const ReportsPage = () => {
+export const ReportsPage = () => {
   return (
     <div>
       
@@ -8,4 +8,3 @@ const ReportsPage = () => {
   )
 }
 
-export default ReportsPage

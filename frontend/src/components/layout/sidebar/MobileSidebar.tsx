@@ -2,9 +2,9 @@ import { useCallback, useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import { useSidebar } from "@/components/ui/sidebar"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet"
-import SidebarHeader from "./SidebarHeader"
-import SidebarContent from "./SidebarContent"
-import SidebarFooter from "./SidebarFooter"
+import { SidebarHeader } from "./SidebarHeader"
+import { SidebarContent } from "./SidebarContent"
+import { SidebarFooter } from "./SidebarFooter"
 
 export const MobileSidebar = () => {
   const { openMobile, setOpenMobile, isMobile } = useSidebar()
@@ -12,10 +12,10 @@ export const MobileSidebar = () => {
 
   // Auto-close mobile sidebar when path changes
   useEffect(() => {
-    if (openMobile) {
+    // if (openMobile) {
       setOpenMobile(false)
-    }
-  }, [location.pathname, openMobile, setOpenMobile])
+    // }
+  }, [location.pathname, setOpenMobile])
 
   const handleClose = useCallback(() => {
     setOpenMobile(false)
@@ -47,4 +47,3 @@ export const MobileSidebar = () => {
   )
 }
 
-export default MobileSidebar

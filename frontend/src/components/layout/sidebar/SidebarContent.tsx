@@ -80,4 +80,3 @@ export const SidebarContent = ({ onItemClick }: SidebarContentProps) => {
   )
 }
 
-export default SidebarContent

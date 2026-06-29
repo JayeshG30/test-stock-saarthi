@@ -1,6 +1,6 @@
 
 
-const WatchlistsPage = () => {
+export const WatchlistsPage = () => {
   return (
     <div>
       
@@ -8,4 +8,3 @@ const WatchlistsPage = () => {
   )
 }
 
-export default WatchlistsPage

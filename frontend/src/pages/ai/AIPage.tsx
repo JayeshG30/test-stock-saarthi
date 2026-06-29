@@ -1,6 +1,6 @@
 
 
-const AIPage = () => {
+export const AIPage = () => {
   return (
     <div>
       
@@ -8,4 +8,3 @@ const AIPage = () => {
   )
 }
 
-export default AIPage

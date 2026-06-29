@@ -84,4 +84,3 @@ export const SidebarItem = ({
   )
 }
 
-export default SidebarItem

@@ -1,9 +1,9 @@
 import React from "react"
 import { Sidebar as SidebarPrimitive, useSidebar } from "@/components/ui/sidebar"
-import SidebarHeader from "./SidebarHeader"
-import SidebarContent from "./SidebarContent"
-import SidebarFooter from "./SidebarFooter"
-import SidebarToggle from "./SidebarToggle"
+import { SidebarHeader } from "./SidebarHeader"
+import { SidebarContent } from "./SidebarContent"
+import { SidebarFooter } from "./SidebarFooter"
+import { SidebarToggle } from "./SidebarToggle"
 
 export const Sidebar = () => {
   const { state, isMobile, toggleSidebar } = useSidebar()
@@ -37,4 +37,3 @@ export const Sidebar = () => {
   )
 }
 
-export default Sidebar

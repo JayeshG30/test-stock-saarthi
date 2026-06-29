@@ -25,4 +25,3 @@ export const SidebarToggle = ({
   )
 }
 
-export default SidebarToggle

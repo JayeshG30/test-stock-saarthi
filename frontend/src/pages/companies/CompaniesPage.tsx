@@ -1,6 +1,6 @@
 
 
-const CompaniesPage = () => {
+export const CompaniesPage = () => {
   return (
     <div>
       
@@ -8,4 +8,3 @@ const CompaniesPage = () => {
   )
 }
 
-export default CompaniesPage

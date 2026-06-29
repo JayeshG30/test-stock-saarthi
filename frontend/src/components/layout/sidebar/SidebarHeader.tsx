@@ -19,4 +19,3 @@ export const SidebarHeader = ({ collapsed }: SidebarHeaderProps) => {
   )
 }
 
-export default SidebarHeader

@@ -8,4 +8,3 @@ export const SidebarFooter = ({collapsed}: SidebarFooterProps) => {
   return null
 }
 
-export default SidebarFooter

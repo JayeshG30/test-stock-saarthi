@@ -1,6 +1,6 @@
 
 
-const RegisterPage = () => {
+export const RegisterPage = () => {
   return (
     <div>
       
@@ -8,4 +8,3 @@ const RegisterPage = () => {
   )
 }
 
-export default RegisterPage

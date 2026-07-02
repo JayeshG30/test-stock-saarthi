@@ -75,48 +75,131 @@
 }
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
+    --background: #ffffff;
+    --foreground: #0f172a;
+
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+
+    --primary: #EA6A1A;
+    --primary-foreground: #ffffff;
+
+    --secondary: #f8fafc;
+    --secondary-foreground: #0f172a;
+
+    --muted: #f8fafc;
+    --muted-foreground: #64748b;
+
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+
+    --destructive: #ef4444;
+
+    --border: #e2e8f0;
+    --input: #cbd5e1;
+    --ring: #EA6A1A;
+
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
     --chart-4: oklch(0.371 0 0);
     --chart-5: oklch(0.269 0 0);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
 
-    /* StockSaarthi Design System v2.0 Colors */
+    --radius: 0.625rem;
+
+    --sidebar: #ffffff;
+    --sidebar-foreground: #475569;
+    --sidebar-primary: #EA6A1A;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #f8fafc;
+    --sidebar-accent-foreground: #0f172a;
+    --sidebar-border: #e2e8f0;
+    --sidebar-ring: #EA6A1A;
+
+    /* ---------- Design System Tokens (LIGHT) ---------- */
+
+    --color-bg-base: #ffffff;
+    --color-bg-surface: #ffffff;
+    --color-bg-elevated: #f8fafc;
+    --color-bg-overlay: #f1f5f9;
+    --color-bg-subtle: #eef2f7;
+
+    --color-primary-brand: #EA6A1A;
+    --color-primary-brand-glow: rgba(234,106,26,.12);
+    --color-primary-brand-hover: #FF7A3D;
+    --color-primary-brand-deep: #C23A0F;
+
+    --color-accent-teal: #00D4AA;
+    --color-accent-amber: #F5A623;
+    --color-accent-rose: #FF4D6D;
+    --color-accent-violet: #8B5CF6;
+
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-muted: #64748b;
+    --color-text-inverse: #ffffff;
+
+    --color-border-subtle: #e2e8f0;
+    --color-border-default: #cbd5e1;
+    --color-border-strong: #94a3b8;
+}
+
+.dark {
+    --background: var(--color-bg-base);
+    --foreground: var(--color-text-primary);
+
+    --card: var(--color-bg-surface);
+    --card-foreground: var(--color-text-primary);
+
+    --popover: var(--color-bg-elevated);
+    --popover-foreground: var(--color-text-primary);
+
+    --primary: var(--color-primary-brand);
+    --primary-foreground: var(--color-text-inverse);
+
+    --secondary: var(--color-bg-subtle);
+    --secondary-foreground: var(--color-text-primary);
+
+    --muted: var(--color-bg-subtle);
+    --muted-foreground: var(--color-text-secondary);
+
+    --accent: var(--color-bg-elevated);
+    --accent-foreground: var(--color-text-primary);
+
+    --destructive: var(--color-accent-rose);
+
+    --border: var(--color-border-subtle);
+    --input: var(--color-border-default);
+    --ring: var(--color-primary-brand);
+
+    --chart-1: oklch(0.87 0 0);
+    --chart-2: oklch(0.556 0 0);
+    --chart-3: oklch(0.439 0 0);
+    --chart-4: oklch(0.371 0 0);
+    --chart-5: oklch(0.269 0 0);
+
+    --sidebar: var(--color-bg-surface);
+    --sidebar-foreground: var(--color-text-secondary);
+    --sidebar-primary: var(--color-primary-brand);
+    --sidebar-primary-foreground: var(--color-text-inverse);
+    --sidebar-accent: var(--color-bg-elevated);
+    --sidebar-accent-foreground: var(--color-text-primary);
+    --sidebar-border: var(--color-border-subtle);
+    --sidebar-ring: var(--color-primary-brand);
+
+    /* ---------- Design System Tokens (DARK) ---------- */
+
     --color-bg-base: #0A0C10;
     --color-bg-surface: #0F1117;
-    --color-bg-elevated: #161B25;
+    --color-bg-elevated: #181d28;
     --color-bg-overlay: #1C2333;
     --color-bg-subtle: #1E2535;
 
     --color-primary-brand: #EA6A1A;
-    --color-primary-brand-glow: rgba(234, 106, 26, 0.15);
+    --color-primary-brand-glow: rgba(234,106,26,.15);
     --color-primary-brand-hover: #FF6B3D;
     --color-primary-brand-deep: #C23A0F;
 
@@ -126,48 +209,13 @@
     --color-accent-violet: #8B5CF6;
 
     --color-text-primary: #F0F4FF;
-    --color-text-secondary: #8B95A9;
-    --color-text-muted: #4E5A6E;
+    --color-text-secondary: #9AA5BC;
+    --color-text-muted: #57657D;
     --color-text-inverse: #0A0C10;
 
     --color-border-subtle: #1E2535;
     --color-border-default: #2A3347;
     --color-border-strong: #3D4F6E;
-}
-
-.dark {
-    --background: var(--color-bg-base);
-    --foreground: var(--color-text-primary);
-    --card: var(--color-bg-surface);
-    --card-foreground: var(--color-text-primary);
-    --popover: var(--color-bg-elevated);
-    --popover-foreground: var(--color-text-primary);
-    --primary: var(--color-primary-brand);
-    --primary-foreground: var(--color-text-inverse);
-    --secondary: var(--color-bg-subtle);
-    --secondary-foreground: var(--color-text-primary);
-    --muted: var(--color-bg-subtle);
-    --muted-foreground: var(--color-text-secondary);
-    --accent: var(--color-bg-elevated);
-    --accent-foreground: var(--color-text-primary);
-    --destructive: var(--color-accent-rose);
-    --border: var(--color-border-subtle);
-    --input: var(--color-border-default);
-    --ring: var(--color-primary-brand);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
-    
-    --sidebar: var(--color-bg-surface);
-    --sidebar-foreground: var(--color-text-secondary);
-    --sidebar-primary: var(--color-primary-brand);
-    --sidebar-primary-foreground: var(--color-text-inverse);
-    --sidebar-accent: var(--color-bg-elevated);
-    --sidebar-accent-foreground: var(--color-text-primary);
-    --sidebar-border: var(--color-border-subtle);
-    --sidebar-ring: var(--color-primary-brand);
 }
 
 @layer base {

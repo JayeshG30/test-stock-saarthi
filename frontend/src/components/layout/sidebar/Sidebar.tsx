@@ -4,6 +4,7 @@ import { SidebarHeader } from "./SidebarHeader"
 import { SidebarContent } from "./SidebarContent"
 import { SidebarFooter } from "./SidebarFooter"
 import { SidebarToggle } from "./SidebarToggle"
+import { cn } from "@/lib/utils"
 
 export const Sidebar = () => {
   const { state, isMobile, toggleSidebar } = useSidebar()
@@ -15,7 +16,7 @@ export const Sidebar = () => {
   return (
     <SidebarPrimitive
       collapsible="icon"
-      className="border-r border-sidebar-border bg-sidebar transition-all duration-200"
+      className="border-r border-border-subtle bg-bg-surface transition-all duration-200"
       style={{
         "--sidebar-width": "256px",
         "--sidebar-width-icon": "64px",
@@ -26,9 +27,12 @@ export const Sidebar = () => {
           <SidebarHeader collapsed={collapsed} />
           <SidebarContent />
         </div>
-        <div className="flex flex-col gap-2 p-4 border-t border-sidebar-border bg-sidebar">
+        <div className={cn(
+          "flex flex-col gap-2 border-t border-border-subtle bg-bg-surface transition-all duration-200",
+          collapsed ? "p-3 items-center" : "p-4"
+        )}>
           <SidebarFooter collapsed={collapsed} />
-          <div className="flex justify-end">
+          <div className={cn("flex w-full", collapsed ? "justify-center" : "justify-end")}>
             <SidebarToggle collapsed={collapsed} onToggle={toggleSidebar} />
           </div>
         </div>

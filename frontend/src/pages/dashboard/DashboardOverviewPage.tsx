@@ -2,7 +2,7 @@ import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/ca
 
 export const DashboardOverviewPage = () => {
   return (
-    <div className="mx-auto max-w-5xl">
+    <div className="mx-auto max-w-6xl">
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">

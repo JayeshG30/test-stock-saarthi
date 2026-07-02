@@ -15,7 +15,7 @@ export const SidebarGroup = ({
   return (
     <SidebarGroupPrimitive className="px-2">
       {!collapsed && (
-        <SidebarGroupLabel className="text-[11px] font-semibold tracking-wider text-text-muted)] uppercase px-3 mb-2">
+        <SidebarGroupLabel className="text-[11px] font-semibold tracking-wider text-text-muted uppercase px-3 mb-2">
           {title}
         </SidebarGroupLabel>
       )}

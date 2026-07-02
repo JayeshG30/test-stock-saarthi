@@ -52,7 +52,7 @@ export const SidebarContent = ({ onItemClick }: SidebarContentProps) => {
 
   return (
     <SidebarContentPrimitive className="no-scrollbar">
-      <nav role="navigation" aria-label="Main Navigation" className="flex flex-col gap-4 py-4">
+      <nav role="navigation" aria-label="Main Navigation" className="flex flex-col gap-2 py-4">
         {filteredGroups.map((group) => (
           <SidebarGroup key={group.id} title={group.title} collapsed={collapsed}>
             <SidebarMenu className="space-y-1">

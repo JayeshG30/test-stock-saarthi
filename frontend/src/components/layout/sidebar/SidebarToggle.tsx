@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 interface SidebarToggleProps {
   collapsed: boolean
@@ -12,7 +13,11 @@ export const SidebarToggle = ({
   return (
     <button
       onClick={onToggle}
-      className="flex h-8 w-8 items-center justify-center rounded-[var(--radius-md)] border border-[var(--sidebar-border)] bg-[var(--sidebar)] text-[var(--sidebar-foreground)]/70 hover:bg-[var(--sidebar-accent)] hover:text-[var(--sidebar-accent-foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sidebar-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--sidebar)] transition-colors cursor-pointer"
+      className={cn(
+        "flex h-8 w-8 items-center justify-center rounded-md border border-border-default bg-bg-surface text-text-muted transition-all duration-200 cursor-pointer",
+        "hover:bg-bg-elevated hover:text-text-primary hover:border-border-strong",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg-surface"
+      )}
       aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
       aria-expanded={!collapsed}
     >

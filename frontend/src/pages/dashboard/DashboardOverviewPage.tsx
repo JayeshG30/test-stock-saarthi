@@ -1,19 +1,31 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { PageContainer, PageHeader, PageSection } from "@/components/common/page"
+import {
+  DashboardGrid,
+  QuickActionsCard,
+  MarketStatusCard,
+  WatchlistSummaryCard,
+  RecentReportsCard,
+  ActivityCard,
+} from "@/components/dashboard"
 
 export const DashboardOverviewPage = () => {
   return (
-    <div className="mx-auto max-w-6xl">
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-            Dashboard
-          </CardTitle>
-          <CardDescription className="text-muted-foreground text-sm">
-            Welcome to StockSaarthi AI. Your intelligent stock research co-pilot.
-          </CardDescription>
-        </CardHeader>
-      </Card>
-    </div>
+    <PageContainer>
+      <PageHeader
+        title="Dashboard"
+        description="Welcome to StockSaarthi AI. Your intelligent stock research co-pilot."
+      />
+      <PageSection>
+        <DashboardGrid>
+          <QuickActionsCard />
+          <MarketStatusCard />
+          <WatchlistSummaryCard />
+          <RecentReportsCard />
+          <div className="md:col-span-2">
+            <ActivityCard />
+          </div>
+        </DashboardGrid>
+      </PageSection>
+    </PageContainer>
   )
 }
-
